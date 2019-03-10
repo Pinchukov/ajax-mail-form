@@ -6,12 +6,14 @@ $subject   = "New message from site \"$sitename\"";
 
 $name = trim($_POST["name"]);
 $phone = trim($_POST["phone"]);
+$text = trim($_POST["text"]);
 $formname = trim($_POST["formname"]);
 
 $message = "
 Form: $formname <br>
 Name: $name <br>
 Phone or mail: $phone <br>
+Message: $text <br>
 ";
 
 $domain = $_SERVER['SERVER_NAME'];

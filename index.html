@@ -8,14 +8,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-	  body {text-align: center; margin: 0;}
-		form > div {margin: 10px;}
-		footer {background-color: black; color: white; margin-top: 50px; padding: 20px;}
-		footer a {display: block; margin-bottom: 10px; color: white;}
-	</style>
+	body {text-align: center; margin: 0;}
+	form > div {margin: 10px;}
+	footer {background-color: black; color: white; margin-top: 50px; padding: 20px;}
+	footer a {display: block; margin-bottom: 10px; color: white;}
+</style>
 </head>
 <body>
 
+<!-- ////////////////// START //////////////////-->
 
 	<form class="form-1">
 		<div>
@@ -40,12 +41,16 @@
 			<input type="text" name="phone" placeholder="Phone number or mail" required>
 		</div>
 		<div>
+			<textarea rows="5" name="text" placeholder="Message text" required></textarea>
+		</div>
+		<div>
 			<button name="submit" name="formname">Send</button>
 		</div>
 		<input type="hidden" name="formname" value="A message from the site in the section room 2">
 	</form>
 
 	<hr>
+
 
 
 	<form class="form-3">
@@ -59,17 +64,41 @@
 			<textarea rows="5" name="text" placeholder="Message text" required></textarea>
 		</div>
 		<div>
-			<button name="submit" name="formname">Send</button>
+			<select name="select1">
+				<option>Option 1</option>
+				<option>Option 2</option>
+				<option>Option 3</option>
+			</select>
 		</div>
-		<input type="hidden" name="formname" value="A message from the site in the section room 3">
-	</form>
+		<div>
+			<select name="select2">
+				<option>Option 1</option>
+				<option>Option 2</option>
+				<option>Option 3</option>
+				<option>Option 4</option>
+				<option>Option 5</option>
+			</select>
+		</div>
+		<div name="radio1">
+			<label><input type="radio" name="radio2" checked> A</label>
+			<label><input type="radio" name="radio2"> B</label>
+		</div>
+		<div name="checkbox1">
+			<label><input type="checkbox" checked> A</label>
+			<label><input type="checkbox"> B</label>
+		</div>
+		<button name="submit" name="formname">Send</button>
+	</div>
+	<input type="hidden" name="formname" value="A message from the site in the section room 3">
+</form>
 
+<!-- ////////////////// END //////////////////-->
 
-	<footer>
-		<div><a href="https://pinchukov.net" target="_blank" title="Visit Developer's WebSite">Sergey Pinchukov</a> ~2019~</div>
-	</footer>
+<footer>
+	<div><a href="https://pinchukov.net" target="_blank" title="Visit Developer's WebSite">Sergey Pinchukov</a> ~2019~</div>
+</footer>
 
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/common.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>

@@ -24,7 +24,7 @@ $(document).ready(function () {
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			alert("Thanks for applying! We will contact you soon.");
+			alert("Thanks for the message! We will contact you soon.");
 			$(".form-2").trigger("reset");
 		});
 		return false;
@@ -37,7 +37,7 @@ $(document).ready(function () {
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			alert("Thanks for the message! We will contact you soon.");
+			alert("Thanks for applying! We will contact you soon.");
 			$(".form-3").trigger("reset");
 		});
 		return false;
