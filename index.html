@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+	<title>Ajax Mail Form</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	  body {text-align: center; margin: 0;}
+		form > div {margin: 10px;}
+		footer {background-color: black; color: white; margin-top: 50px; padding: 20px;}
+		footer a {display: block; margin-bottom: 10px; color: white;}
+	</style>
+</head>
+<body>
+
+
+	<form class="form-1">
+		<div>
+			<input type="text" name="name" placeholder="Name" required>
+		</div>
+		<div>
+			<input type="text" name="phone" placeholder="Phone number or mail" required>
+		</div>
+		<div>
+			<button name="submit" name="formname">Send</button>
+		</div>
+		<input type="hidden" name="formname" value="A message from the site in the section room 1">
+	</form>
+
+	<hr>
+
+	<form class="form-2">
+		<div>
+			<input type="text" name="name" placeholder="Name" required>
+		</div>
+		<div>
+			<input type="text" name="phone" placeholder="Phone number or mail" required>
+		</div>
+		<div>
+			<button name="submit" name="formname">Send</button>
+		</div>
+		<input type="hidden" name="formname" value="A message from the site in the section room 2">
+	</form>
+
+	<hr>
+
+
+	<form class="form-3">
+		<div>
+			<input type="text" name="name" placeholder="Name" required>
+		</div>
+		<div>
+			<input type="text" name="phone" placeholder="Phone number or mail" required>
+		</div>
+		<div>
+			<textarea rows="5" name="text" placeholder="Message text" required></textarea>
+		</div>
+		<div>
+			<button name="submit" name="formname">Send</button>
+		</div>
+		<input type="hidden" name="formname" value="A message from the site in the section room 3">
+	</form>
+
+
+	<footer>
+		<div><a href="https://pinchukov.net" target="_blank" title="Visit Developer's WebSite">Sergey Pinchukov</a> ~2019~</div>
+	</footer>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
